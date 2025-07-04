@@ -99,3 +99,39 @@
     @apply bg-background text-foreground;
   }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .bg-vignette {
+    background: radial-gradient(
+      circle at center,
+      transparent 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+
+  .pulse-radioactive {
+    animation: pulse-radioactive 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-radioactive {
+    0%,
+    100% {
+      box-shadow:
+        0 0 5px #00ff41,
+        0 0 10px #00ff41,
+        0 0 15px #00ff41;
+    }
+    50% {
+      box-shadow:
+        0 0 10px #00ff41,
+        0 0 20px #00ff41,
+        0 0 30px #00ff41;
+    }
+  }
+}
