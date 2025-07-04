@@ -80,11 +80,17 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Spacer Section */}
+      <div className="bg-black py-12"></div>
+      <div className="bg-black py-12"></div>
+      <div className="bg-black py-12"></div>
+      <div className="bg-black py-12"></div>
+
       {/* News Section */}
       <div
         className="relative py-20"
         style={{
-          backgroundImage: `url('/img/81a7276f-02ce-4053-b022-edf267d71ca9.jpg')`,
+          backgroundImage: `url('https://cdn.poehali.dev/files/97f99c96-aebd-47b3-9e80-5fdae6bff25e.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
